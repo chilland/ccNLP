@@ -1,0 +1,2 @@
+# ccNLP
+Containerized CoreNLP
