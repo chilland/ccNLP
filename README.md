@@ -39,7 +39,6 @@ import requests
 headers = {'Content-Type': 'application/json'}
 data = {'text': 'Stanford CoreNLP provides a set of natural language analysis tools which can take raw text input and give the base forms of words, their parts of speech, whether they are names of companies, people, etc., normalize dates, times, and numeric quantities, and mark up the structure of sentences in terms of phrases and word dependencies, indicate which noun phrases refer to the same entities, indicate sentiment, etc.'}
 data = json.dumps(data)
-r = requests.post('http://localhost:5000/process', data=data,
-headers=headers)
+r = requests.post('http://localhost:5000/process', data=data, headers=headers)
 r.json()
 ```
