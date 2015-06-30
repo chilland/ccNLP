@@ -1,5 +1,4 @@
 # ccNLP
-========
 
 Containerized CoreNLP
 
