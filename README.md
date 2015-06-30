@@ -30,9 +30,13 @@ Installation
 Usage
 ------
 
+You can send the API large chunks of text, but this can be slow and may throw
+an error on the wrapper side. I recommend going by sentence or chuncks in that
+range.
+
 ###Python
 
-```
+```python
 import json
 import requests
 
