@@ -1,11 +1,12 @@
 import glob
-import json 
+import json
 from ConfigParser import ConfigParser
-from stanford_corenlp_pywrapper import sockwrap
+from stanford_corenlp_pywrapper import CoreNLP
 
 config_file = glob.glob('resources/config.ini')
 parser = ConfigParser()
 parser.read(config_file)
+
 
 def parse_config():
     try:
@@ -14,8 +15,8 @@ def parse_config():
     except Exception as e:
         print 'There was an error parsing the config file. {}'.format(e)
 
+
 def start_stanford():
     jars = parse_config()
-    p = sockwrap.SockWrap(configfile='resources/stanford_config.ini',
-                          corenlp_jars=jars)
+    p = CoreNLP(configfile='resources/stanford_config.ini', corenlp_jars=jars)
     return p
