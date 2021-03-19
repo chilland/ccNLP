@@ -3,7 +3,7 @@ configparser==3.3.0.post2
 Flask==0.10.1
 Flask-RESTful==0.3.3
 itsdangerous==0.24
-Jinja2==2.7.3
+Jinja2==2.11.3
 MarkupSafe==0.23
 -e git+https://github.com/brendano/stanford_corenlp_pywrapper#egg=stanford_corenlp_pywrapper
 tornado==4.2
